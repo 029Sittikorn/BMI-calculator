@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header" style="color: white; width: 100%; background-color: blueviolet; padding: 20px;">
+        <h1 style="color: white;">BMI</h1>
+        <center><h2>CALCULATOR</h2></center>
+    </div>
+    <div class="container">
+        <div class="input" style="display: inline-flex; justify-content: space-between; margin-top: 60px; height: 100%;">
+        <label>
+            <input id="h-input" type="number" placeholder="กรอกส่วนสูง">
+        </label>        
+        <label>
+            <input id="w-input" style="margin-left: 10px;" type="number" placeholder="กรอกน้ำหนัก">
+        </label>
+        </div>
+        <button style="margin-top: 60px;" onclick="Calculate()">คำนวณ BMI</button>         
+            <divclass="input" style="display: inline-flex; justify-content: space-between; margin-top: 60px;">
+                <div class="bmi-value">
+            <h4>ค่า BMI: </h4>
+            <div style="margin-top: 20px;" id="bmi-output"></div>
+        </div>
+        <div class="status">
+            <h4>สถานะ: </h4>
+            <div style="margin-top: 20px;" id="bmi-status"></div>
+        </div>   
+            </div>
+    </div>
+</body>
+</html>
